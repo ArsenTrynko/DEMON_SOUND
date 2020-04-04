@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body,html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #fafafa;
+	font-family: Trebuchet MS,Helvetica;
+}
+
+
+/*шапка*/
+
+
+header {
+width: 100%;
+padding: 10px 0.5% 0px 0.5%;
+background: transparent;
+float: left;
+position: fixed;
+}
+
+header #logo {
+color: #fff;
+cursor: pointer;
+}
+
+header #logo span {
+	font-size: 1,7em;
+	line-height: 45px;
+	margin-left: 40px;
+	font-family: 'Suez One',serif;
+}
+
+@media (min-width: 701px){
+	#logo {
+		float: left;
+		width: 30%;
+		font-size: 1.1em;
+	}
+
+	#about{
+		float: right;
+		width: 10%
+	}
+}
+
+@media (max-width: 700px){
+	#logo {
+		margin-top: 15px;
+		width: 100%;
+		font-size: 1.5em;
+	}
+
+	#about{
+		float: left;
+		width: 100%
+	}
+}
+
+#about{
+	text-align: center;
+	font-size: 1em;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+
+#about > a {color: #fff}
+
+#about > a:hover {
+	color: #b0b0b0;
+	text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+	margin-right: 7%;
+}
+
+.fixed {
+	z-index: 5000;
+	background-color: #fff;
+	border-bottom: 1px solid silver;
+}
+
+
+header.fixed #logo {
+	color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+
+/* головний блок*/
+
+
+#top {
+	width: 100%;
+	height: 600px;
+	background-image: url(https://i.pinimg.com/originals/6b/62/0a/6b620a9be73f5ef069e215ee7cb0371c.jpg);
+	background-blend-mode:multiply;
+	background-color: #2e3a44;
+	background-size: cover;
+	text-align: left;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+}
+
+#top h1 {
+	padding-top: 15%;
+	
+	margin-bottom: -110px;
+}
+
+#top h2 {
+		
+}
+
+
+
+@media (max-width: 781px){
+	h1  {
+		font-size: 4em;
+	}
+	h2  {
+		font-size: 4em;
+	}
+#top{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+}
+
+@media (min-width: 780px){
+h1  {
+		font-size: 6em;
+	}
+	h2  {
+		font-size: 6em;
+	}
+	
+
+}
+
+
+/* блок "Про нас"*/
+
+#aboutUs {
+	padding-top: 0%;
+	float: left;
+	background-color: #000000;
+	
+	color: #a0a0a0;
+	font-size: 1.5em;
+}
+
+@media (min-width: 1401px){
+	#aboutUs{
+		padding: 100px 20%;
+	width: 60%;
+	}
+}
+
+@media (max-width: 1400px){
+	#aboutUs{
+		padding: 100px 10%;
+	width: 80%;
+	}
+}
+
+@media (max-width: 700px){
+	#aboutUs div{
+		width: 98%!important;
+		margin-bottom: 20px; 
+	}
+}
+
+#aboutUs div{
+	width: 48%;
+	margin-right:2%;
+	float: left;
+}
+
+#aboutUs h2 {font-size: 3em}
+#aboutUs span {color:#a0a0a0}
+
+
+/*Блок асортимент*/
+
+#asorty{
+	float: left;
+	background-image: url(https://wallpaperaccess.com/full/1107702.jpg);
+	background-blend-mode: multiply;
+	background-color: #fff;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#asorty h2 {color: #ccc;font-size: 4em}
+
+#asorty .img {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+	margin-left: 8%;
+	margin-top: 50px;
+}
+
+#asorty .img:nth-child(odd){
+	margin-left: 18%;
+}
+
+
+#asorty img {
+background: #fafafa;
+padding: 5px;
+border: 2px solid silver;
+float: left;
+width: 100%;
+max-width: 500px;
+}
+
+#asorty span{
+	float: left;
+	width: 100%;
+	font-size: 2em;
+	margin-top: 10px;
+	color: #ccc;
+}
+
+@media (max-width: 700px){
+#asorty .img {
+width: 80%!important;
+margin-right:0%!important;
+margin-left:10%!important;
+ }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>S O U N D</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>DEMON SOUND</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Меню" onclick="slowScroll('#aboutUs')">Меню</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>DEMON</h1>
+		<h2>SOUND</h2>
+	</div>
+
+<div id="aboutUs">
+	<div class="intro">
+		<h2>Гучніше не буває!</h2>
+		<span>Великий вибір автомобільної акустики</span>
+	</div>
+	<div class="text">
+		<span>В каталогах нашего сайта вы найдете полную информацию об автотоварах: технические характеристики, габариты, фото, обзоры, цены и отзывы. Подбор по параметрам, круглосуточная онлайн-продажа качественной автомобильной продукции оптом и в розницу с доставкой по всей Украине (Винница, Днепр, Житомир, Запорожье, Ивано-Франковск, Кропивницкий, Луцк, Львов, Николаев, Одесса, Полтава, Ровно, Сумы, Тернополь, Ужгород, Харьков, Херсон, Хмельницкий, Черкассы, Чернигов, Черновцы).</span>
+	</div>
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$('html,body').animate({
+				scrollTop:$(id).offset().top
+			},500);
+		}
+
+		$(document).on("scroll",function(){
+			if ($(window).scrollTop() === 0)
+				$("header").removeClass("fixed")
+			else 
+				$("header").attr("class","fixed")
+		});
+	</script>
+</body>
+</html> 
+
