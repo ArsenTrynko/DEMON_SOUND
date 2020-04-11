@@ -46,6 +46,7 @@ header #logo span {
 		float: left;
 		width: 30%;
 		font-size: 1.1em;
+
 	}
 
 	#about{
@@ -59,11 +60,13 @@ header #logo span {
 		margin-top: 15px;
 		width: 100%;
 		font-size: 1.5em;
+	
 	}
 
 	#about{
-		float: left;
-		width: 100%
+		float: right;
+		width: 10%;
+		margin-top: -45px;
 	}
 }
 
@@ -118,9 +121,7 @@ header.fixed #logo {
 }
 
 #top h1 {
-	padding-top: 15%;
-	
-	margin-bottom: -110px;
+
 }
 
 #top h2 {
@@ -131,10 +132,17 @@ header.fixed #logo {
 
 @media (max-width: 781px){
 	h1  {
-		font-size: 4em;
+		font-size: 3.5em;
+
+		padding-top: 80%;
+	
+	margin-bottom: -60px;
+		
 	}
 	h2  {
-		font-size: 4em;
+		font-size: 3.5em;
+
+
 	}
 #top{
 	display: flex;
@@ -148,6 +156,9 @@ header.fixed #logo {
 @media (min-width: 780px){
 h1  {
 		font-size: 6em;
+		padding-top: 15%;
+	
+	margin-bottom: -110px;
 	}
 	h2  {
 		font-size: 6em;
