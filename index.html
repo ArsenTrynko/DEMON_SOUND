@@ -10,9 +10,18 @@
 		<div id="logo" onclick="slowScroll('#top')">
 			<span>DEMON SOUND</span>
 		</div>
-		<div id="about">
-			<a href="#" title="Меню" onclick="slowScroll('#aboutUs')">Меню</a>
-		</div>
+		<nav class="fall-menu" id="menu">
+			<ul> 
+				<li><a href="#">Меню</a>
+					<ul>
+						<li><a onclick="slowScroll('#aboutUs')">Про нас</a></li>
+						<li><a onclick="slowScroll('#feedback')">Консультація</a></li>
+						<li><a onclick="slowScroll('#table')">Каталог</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				 </li>
+				</ul>
+		</nav>
 	</header>
 
 	<div id="top">
@@ -50,7 +59,7 @@
 	</form>
 </div>
 
-<div class="table">
+<div class="table" id="table">
 <table>
     <thead>
         <tr>
