@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script src="js\script.js"></script>
 	<title>S O U N D</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -41,21 +42,21 @@
 
 <div id="feedback">
 	<center><h5>Консультація</h5></center>	
-	<form id="form_input">
+	<form id="form_input" onsubmit="return validate();">
 
 		<label for="name">Ім'я <span>*</span></label><br>
-		<input type="text" placeholder="Введіть Ім'я" name="name" id="name"><br>
+		<input type="text" placeholder="Введіть Ім'я" name="name" id="name" pattern="[а-яА-ЯёЁ]{1,64}" required title="Тільки букви"><br>
 
 		<label for="email">Електронна почта<span>*</span></label><br>
 		<input type="email" placeholder="Введіть Email" name="email" id="email"><br>
 
 		<label for="phone">Номер телефону <span>*</span></label><br>
-		<input type="phone" placeholder="Введіть Номер телефону" name="phone" id="phone"><br>
+		<input type="phone" placeholder="Введіть Номер телефону" name="phone" id="phone" pattern="[0-9]{1,20}" required title="Тільки цифри"><br>
 
 		<label for="car">Марка і модель авто</label><br>
 		<input type="car" placeholder="Введіть Марку і модель вашого авто" name="car" id="car">
 
-		<div id="mess_send" class="btn">Надіслати</div>
+		<button id="mess_send" class="btn" type="submit">Надіслати</button>
 	</form>
 </div>
 
