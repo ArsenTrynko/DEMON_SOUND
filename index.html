@@ -89,6 +89,11 @@
 </table>
 </div>
 
+<button id="myBtn">Click</button>
+<button id="myBtn1">Hover</button>
+<button id="myBtn2">Unhover</button>
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
@@ -104,6 +109,27 @@
 			else 
 				$("header").attr("class","fixed")
 		});
+
+
+var x=document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+var y=document.getElementById("myBtn1");
+y.addEventListener("mouseover", mySecondFunction);
+var z=document.getElementById("myBtn2");
+z.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  alert('click');
+}
+
+function mySecondFunction() {
+  alert('mouseover');
+}
+
+function myThirdFunction() {
+  alert('mouseout')
+}
+
 	</script>
 </body>
 </html> 

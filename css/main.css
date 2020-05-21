@@ -349,5 +349,31 @@ th{
 
 
 
+#myBtn{
+	float: left;
+	width: 200px;
+	height: 150px;
+	background-color: red;
+}
+
+
+#myBtn1{
+	float: left;
+	margin-left: 300px;
+	width: 200px;
+	height: 150px;
+	background-color: yellow;
+}
+
+
+#myBtn2{
+	float: right;
+	width: 200px;
+	height: 150px;
+	background-color: green;
+}
+
+
+
 
 

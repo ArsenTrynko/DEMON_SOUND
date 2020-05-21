@@ -1,7 +1,10 @@
 
+
+
+
 function validate(){
 var name = document.getElementById("name");
-var phone = document.getElementById("phone");
+var phone = document.getElementById("phone"); 
 
 if(!name.value){
 	name.style.border = "2px solid red";
@@ -13,6 +16,7 @@ if(!name.value){
 	return false;
    }
 
-return true;
+return true;  
 
 }
+
