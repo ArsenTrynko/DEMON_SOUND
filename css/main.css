@@ -7,14 +7,28 @@
 	outline: none;
 }
 
-body,html {
+html ,body  {
 	width: 100%;
 	height: 100%;
-}
 
-body {
+		}
+
+html {
+    --bg:#2e3a44;
+    --logo-color:#fff;
+}
+html[data-theme='dark'] {
+   
+    --color-h1: #2A73CC;
+     --color-h2: #2A73CC;
+    --bg:#fff;
+    --logo-color:#2A73CC;
+}
+body  {
 	background-color: #fafafa;
 	font-family: Trebuchet MS,Helvetica;
+	
+
 }
 
 
@@ -30,7 +44,7 @@ position: fixed;
 }
 
 header #logo {
-color: #fff;
+color: var(--logo-color);
 cursor: pointer;
 }
 
@@ -145,21 +159,31 @@ header.fixed #logo {
 }
 
 
+
 /* головний блок*/
+ 
+ h1{
+ 	 color: var(--color-h1);
+ }
+ h2{
+ 	 color: var(--color-h2);
+ }
 
-
+ 
 #top {
 	width: 100%;
 	height: 600px;
 	background-image: url(https://i.pinimg.com/originals/6b/62/0a/6b620a9be73f5ef069e215ee7cb0371c.jpg);
 	background-blend-mode:multiply;
-	background-color: #2e3a44;
 	background-size: cover;
 	text-align: left;
+	background-color: var(--bg);
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 3em;
 }
+
+
 
 #top h1 {
 
@@ -370,10 +394,59 @@ th{
 	float: right;
 	width: 200px;
 	height: 150px;
-	background-color: green;
+	background-color: green ;
 }
 
 
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+input[type="checkbox"]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 80px;
+  height: 40px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: -18px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #2A73CC ;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 60px;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 

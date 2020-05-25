@@ -1,5 +1,5 @@
 
-
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 function validate(){
 var name = document.getElementById("name");
@@ -19,7 +19,7 @@ return true;
 
 }
 
-
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 var x = document.getElementById('myBtn')
 x.addEventListener('click',() => {alert('click')});
@@ -33,3 +33,25 @@ x.addEventListener('mouseout', () => {alert('mouseout')});
 
 
 
+/* ////////////////////////////////////////переключатель тем//////////////////////////////////////////////////////////// */
+
+   var checkbox = document.querySelector('input[name=theme]');
+
+   checkbox.addEventListener('change', function() {
+     if(this.checked) {
+           trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+       } else {
+          trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+        }
+     })
+
+     let trans = () => {
+         document.documentElement.classList.add('transition');
+          window.setTimeout(() => {
+              document.documentElement.classList.remove('transition')
+          }, 1000)
+      }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

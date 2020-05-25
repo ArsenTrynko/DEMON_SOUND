@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme= "light" >
 <head>
 	<meta charset="UTF-8">
 	<title>S O U N D</title>
@@ -10,6 +10,7 @@
 		<div id="logo" onclick="slowScroll('#top')">
 			<span>DEMON SOUND</span>
 		</div>
+		<input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
 		<nav class="fall-menu" id="menu">
 			<ul> 
 				<li><a href="#">Меню</a>
@@ -108,6 +109,9 @@
 			else 
 				$("header").attr("class","fixed")
 		});
+
+
+
 	</script>
 	<script src="./js/script.js"></script>
 </body>
